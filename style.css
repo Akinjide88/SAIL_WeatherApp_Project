@@ -1,0 +1,238 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(180deg, rgb(50, 7, 121),darkmagenta);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+}
+
+.container{
+    background-image: url(./weather.jpg);
+    background-position: center;
+    background-size: conver;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    border-radius: 5px;
+    padding: 30px;
+}
+
+.wrapper{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#myInput{
+    width: 250px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 3px solid darkmagenta;
+    outline: none;
+}
+
+#search_btn{
+    background: linear-gradient(180deg, rgb(50, 7, 121),darkmagenta);
+    border: none;
+    width: 80px ;
+    height: 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    color: white;
+}
+
+#result{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+
+.contain{
+    background-color: rgba(0, 0, 0, 0.664);
+    width: 300px;
+    padding: 20px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.city{
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.second{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.icon{
+    width: 110px;
+    height: 110px;
+    margin-top: 5px;
+}
+
+.temp{
+    font-size: 50px;
+    margin-left: 30px;
+}
+
+.third{
+    margin-top: 10px;
+}
+
+.description{
+    font-size: 22px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+.content{
+    width: 320px;
+    height: 320px;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    display: grid;
+    grid-template-columns: auto auto;
+
+}
+
+.humidity{
+    width: 140px;
+    height: 140px;
+    background: linear-gradient(180deg, rgb(50, 7, 121),darkmagenta);
+    color: white;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Error message */
+#error{
+    width: 90%;
+    margin-left: 35px;
+    font-size: 35px;
+}
+
+/* Mobile reponsiveness for device less than 660px */
+@media screen and (max-width:600px){
+    body{
+        overflow: auto;
+        height: 130vh;
+    }
+
+    #myInput{
+        width: 120px;
+    }
+
+    #result{
+        width: 95%;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .contain{
+        width: 250px;
+    }
+
+    .content{
+        width: 250px;
+        height: 250px;
+    }
+
+    .humidity{
+        width: 100px;
+        height: 100px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .second{
+        width: 250px;
+    }
+
+    .icon{
+        width: 70px;
+        height: 70px;
+    }
+
+    .temp{
+        font-size: 30px;
+    }
+
+    #error{
+        margin-left: 5px;
+        font-size: 20px;
+    }
+
+}
+
+/* Mobile reponsiveness for device less than 430px */
+@media screen and (max-width:430px){
+    .contain{
+        width: 180px;
+    }
+
+    .content{
+        width: 180px;
+        height: 250px;
+    }
+
+    .humidity{
+        width: 70px;
+        height: 70px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .second{
+        width: 150px;
+    }
+
+    .icon{
+        width: 70px;
+        height: 70px;
+    }
+
+    .temp{
+        font-size: 30px;
+    }
+
+    #error{
+        
+        width: 90%;
+        margin-left: 5px;
+        font-size: 15px;
+    }
+
+}
