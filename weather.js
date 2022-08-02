@@ -17,17 +17,14 @@ btn.addEventListener("click", () => {
         Result.innerHTML = `
             <div class="contain">
                 <div class="first">
-                // Displays the input location
                     <h2 class="city">${data.location.name}</h2>
                 </div>
                 
                 <div class="second">
                     <div>
-                    // Displays the Icon
                         <img src="${"https:"+ data.current.condition.icon}" class="icon"/>
                     </div> 
                     <div class="degree">
-                    // Displays the degree
                         <p class="temp">${data.current.temp_c}&#8451</p>
                         <p class="temp">${data.current.temp_f}&#8457</p>
                     </div>
@@ -35,7 +32,6 @@ btn.addEventListener("click", () => {
                 </div>
                 
                 <div class="third">
-                // Displays the description
                     <p class="description">${data.current.condition.text}</p>
                 </div>
     
@@ -44,22 +40,18 @@ btn.addEventListener("click", () => {
             <div class="content">  
                 <div class="humidity">
                     <p>Humidity</p>
-                    // Displays the humudity
                     <p>${data.current.humidity}&#37</p>
                 </div>
                 <div class="humidity">
                     <p>Wind</p>
-                    // Displays the wind
                     <p>${data.current.wind_kph}km/h</p>
                 </div>
                 <div class="humidity">
                     <p>Pressure</p>
-                    // Displays the pressure
                     <p>${data.current.pressure_mb}mb</p>
                 </div>
                 <div class="humidity">
                     <p>Precip</p>
-                    // Displays the precip
                     <p>${data.current.precip_in}&#37</p>
                 </div>  
             </div>
